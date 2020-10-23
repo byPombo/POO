@@ -6,20 +6,35 @@ namespace pooMensagem
 {
     class Mensagem
     {
-        public string TextoMensagem;
+        //private string TextoMensagem;
 
-        public void ExibirMensagem()
+        //public void ExibirMensagem()
+        //{
+        //    Console.WriteLine(this.TextoMensagem);
+        //}
+
+        //public string getTextoMensagem()
+        //{
+        //    return this.TextoMensagem;
+        //}
+        //public void setTextoMensagem(string valor)
+        //{
+        //    this.TextoMensagem = valor.ToUpper();
+        //}
+
+        private string textoMensagem;
+        public string TextoMensagem
         {
-            Console.WriteLine(this.TextoMensagem);
+            get
+            {
+                return this.TextoMensagem;
+            }
+
+            set
+            {
+                this.textoMensagem = value.ToUpper();
+            }
         }
 
-        public string getTextoMensagem()
-        {
-            return this.TextoMensagem;
-        }
-        public void setTextoMensagem(string valor)
-        {
-            this.TextoMensagem = valor.ToUpper();
-        }
     }
 }
