@@ -13,5 +13,13 @@ namespace pooMensagem
             Console.WriteLine(this.TextoMensagem);
         }
 
+        public string getTextoMensagem()
+        {
+            return this.TextoMensagem;
+        }
+        public void setTextoMensagem(string valor)
+        {
+            this.TextoMensagem = valor.ToUpper();
+        }
     }
 }

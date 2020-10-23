@@ -8,8 +8,8 @@ namespace pooMensagem
         {
             Mensagem msg1, msg2;
             msg1 = new Mensagem();
-            msg1.TextoMensagem = "Alô Mundo";
-            msg1.ExibirMensagem();
+            msg1.setTextoMensagem("Alô Mundo");
+            Console.WriteLine(msg1.getTextoMensagem());
 
             msg2 = new Mensagem();
             msg2.TextoMensagem = "Segundo Objeto";
